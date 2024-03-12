@@ -1,0 +1,287 @@
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90%;
+  overflow-y: hidden;}
+
+
+/* [START] Contact widget button */
+
+#contact_widget_button {
+   font-family: sans-serif;
+  font-size: 14px;
+  line-height: 1.15;}
+
+#contact_widget_button * {outline: none;}
+#contact_widget_button *, #contact_widget_button *::before, #contact_widget_button *::after {box-sizing: border-box;}
+#contact_widget_button .text-center {text-align: center !important;}
+
+#contact_widget_button .align-items-center {
+   -ms-flex-align: center !important;
+   align-items: center !important;}
+
+#contact_widget_button .justify-content-center {
+   -ms-flex-pack: center !important;
+   justify-content: center !important;}
+
+#contact_widget_button {
+   display: -ms-flexbox !important;
+   display: -webkit-flex !important;
+  display: flex !important;}
+
+#contact_widget_button .d-flex {
+  display: -ms-flexbox !important;
+  display: -webkit-flex !important;
+  display: flex !important;}
+
+#contact_widget_button .d-none {display: none !important;}
+#contact_widget_button .align-items-start {
+   -ms-flex-align: start !important;
+   align-items: flex-start !important;}
+
+#contact_widget_button .flex-column {
+   -ms-flex-direction: column !important;
+   flex-direction: column !important;}
+
+@-webkit-keyframes pulsation {
+ 0%{
+  -ms-transform:scale(0);
+  -webkit-transform:scale(0);
+  transform:scale(0);
+  opacity:1} 
+50%{opacity:.5} to{
+ -ms-transform:scale(1);
+-webkit-transform:scale(1);
+ transform:scale(1);
+ opacity:0}}
+
+
+@keyframes pulsation {
+ 0%{
+-ms-transform:scale(0);
+-webkit-transform:scale(0);
+transform:scale(0);
+opacity:1} 
+
+50%{opacity:.5} to{
+-ms-transform:scale(1);
+-webkit-transform:scale(1);
+transform:scale(1);
+opacity:0}}
+
+
+@-webkit-keyframes iconOpacity {
+0%{opacity:0}
+40%{opacity:.96}
+60%{opacity:1}
+80%{opacity:.96}
+100%{opacity:0}}
+
+@keyframes iconOpacity {
+0%{opacity:0}
+ 40%{opacity:.96}
+ 60%{opacity:1}
+ 80%{opacity:.96}
+ 100%{opacity:0}}
+
+
+
+@-webkit-keyframes changeBG {
+0%{
+  background:linear-gradient(290deg ,#428dff 5% ,#8393ff 10%,#00f6b6 80%);}
+
+40%{ background:linear-gradient(270deg ,#428dff 5% ,#8393ff 10%,#00f6b6 80%);}
+
+ 60%{ 
+  background:linear-gradient(250deg ,#428dff 5% ,#8393ff 10%,#00f6b6 80%);}
+
+ 80%{
+  background:linear-gradient(230deg ,#428dff 5% ,#8393ff 10%,#00f6b6 80%);}
+
+ 100%{
+  background:linear-gradient(210deg ,#428dff 5% ,#8393ff 10%,#00f6b6 80%);}}
+
+
+@keyframes changeBG {
+0%{
+  background:linear-gradient(290deg ,#428dff 5% ,#8393ff 10%,#00f6b6 80%);}
+
+40%{ background:linear-gradient(270deg ,#428dff 5% ,#8393ff 10%,#00f6b6 80%);}
+
+ 60%{ 
+  background:linear-gradient(250deg ,#428dff 5% ,#8393ff 10%,#00f6b6 80%);}
+
+ 80%{
+  background:linear-gradient(230deg ,#428dff 5% ,#8393ff 10%,#00f6b6 80%);}
+
+ 100%{
+  background:linear-gradient(210deg ,#428dff 5% ,#8393ff 10%,#00f6b6 80%);}}
+
+
+
+#contact_widget_button{
+-webkit-animation:changeBG 1s infinite;
+animation:changeBG  1s infinite;
+  background:linear-gradient(290deg ,#428dff 5% ,#8393ff 10%,#00f6b6 80%);
+ position:fixed;
+right:15px;
+bottom:15px;
+width:50px;
+height:50px;
+border-radius:100%;
+cursor:pointer;
+z-index:1001
+}
+
+
+ 
+#contact_widget_button.clicked{z-index:1041}
+#contact_widget_substrate{
+position:fixed;
+top:0;
+right:0;
+bottom:0;
+left:0;
+background:transparent;
+z-index:0;
+display:none}
+
+
+#contact_widget_substrate.active{
+z-index:1020;
+display:block}
+
+.contact-widget-pulsation{
+background:#f0f6b6; 
+width:80px;
+height:80px;
+border-radius:50px;
+position:absolute;
+left:-15px;
+top:-15px;
+z-index:-1;
+-ms-transform:scale(0);
+-webkit-transform:scale(0);
+transform:scale(0);
+-webkit-animation:pulsation 2s infinite;
+animation:pulsation 2s infinite}
+
+
+.contact-widget-icon{
+color:#fff;
+width:100%;
+font-size:20px;
+overflow:hidden}
+
+.contact-widget-icon .fa-address-book{
+-webkit-animation:iconOpacity 3s infinite;
+animation:iconOpacity 3s infinite;
+width:20px;
+height:20px}
+
+.contact-widget-text{
+font-size:7px;
+text-transform:uppercase;
+line-height:9px;color:#fff}
+
+.contact-widget-dropdown{
+position:absolute;
+bottom:60px;
+right:36px;
+padding:20px;
+border-radius:10px;
+background:linear-gradient(135deg ,#428dff 5% ,#83f3ff 20%,#f0f6b6 70%);
+display:block;
+opacity:0;
+z-index:-1;
+margin-bottom:20px;
+-webkit-transition:margin-bottom .3s ease,opacity .3s ease;
+transition:margin-bottom .3s ease,opacity .3s ease;
+box-shadow:5px 12px 30px rgba(0,0,0,.35);
+visibility:hidden;
+min-width:250px}
+
+.contact-widget-dropdown.expanded{
+margin-bottom:0;
+opacity:.98;
+z-index:1;
+visibility:visible}
+
+
+
+
+.contact-widget-item{color:#333}
+.contact-widget-item:hover {color: #00f6b9;}
+.contact-widget-item:not(:last-child){margin-bottom:18px}
+.contact-widget-item-icon{
+font-size:20px;
+display:block;
+-ms-flex:0 0 40px;
+flex:0 0 40px;
+max-width:40px;
+width:40px;
+height:40px;
+border-radius:100%;
+margin-right:10px;
+color:#fff}
+
+.contact-widget-item-icon svg{
+width:20px!important;
+height:20px}
+
+
+
+
+.contact-widget-snort{background:linear-gradient(135deg ,#428dff 5% ,#83f3ff 20%,#ff60b6 70%);}
+
+
+.contact-widget-reddit{background: #FF4500}
+.contact-widget-threads{background:#333}
+.contact-widget-instagram{background: linear-gradient(45deg, #405DE6, #5851DB, #833AB4, #C13584, #E1306C, #FD1D1D);
+}
+.contact-widget-x{background:#000}
+.contact-widget-bluesky{background:#339aff}
+.contact-widget-mastodon{background:#6364FF}
+.contact-widget-messenger{background:#0084ff}
+.contact-widget-viber{background:#7c529d}
+.contact-widget-telegram{background:#2ca5e0}
+.contact-widget-skype{background:#31c4ed}
+.contact-widget-whatsapp{background:#25d366}
+.contact-widget-email{background:#50a8ff}
+.contact-widget-call{background:#3cba8b}
+.contact-widget-contacts{background:#141e1a}
+
+@media (min-width: 420px) {
+	#contact_widget_button{right:30px;width:70px;height:70px}
+	.contact-widget-pulsation{width:100px;height:100px}
+	.contact-widget-icon{font-size:60px}
+	.contact-widget-icon .fa-address-book{width:60px;height:60px}
+	.contact-widget-text{font-size:15px;line-height:16px}
+.contact-widget-item{font-size:1.2em;}
+	.contact-widget-dropdown{right:60px}
+
+
+.contact-widget-dropdown{
+font-size: 1.5em;
+bottom:70px;
+right:95px;
+padding:35px;
+margin-bottom:30px;
+min-width:350px}
+
+#contact_widget_button{
+right:15px;
+bottom:15px;
+width:90px;
+height:90px;
+}
+
+
+}
+@media (min-width: 992px) {
+#contact_widget_button{bottom:30px}
+
+}
+/* [End] Contact widget button */

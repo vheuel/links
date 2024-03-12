@@ -1,0 +1,42 @@
+
+        .address {
+      border-left: 4px solid #00f9b0;
+  background: #c3f8ea;
+  padding: 10px;
+  margin:6px 5px;
+  font-style: italic;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  font:  Helvetica;
+        }
+
+
+
+
+
+        .copy {
+            float: right;
+            cursor: pointer;
+        }
+        #search {
+           border-radius:25px;
+            width: 100%;
+            border: 1px solid #aaa;
+            padding: 12px 20px;
+            margin: 8px 0;
+            box-sizing: border-box;
+        }
+        .token {color:#b1b1b1;
+            display: inline-block;
+            direction: rtl;
+            width: 200px; 
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+.addresslist {font-size:1.1em;
+margin-bottom:9px;
+ height: 230px;
+            overflow-y: auto;}
+
