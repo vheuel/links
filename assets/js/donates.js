@@ -182,7 +182,7 @@ function donate() {
     <div id="Ada">
         <div class="d-flex justify-content-between align-items-center">
             <div class="d-flex align-items-center">
-                <img src="/assets/img/svg/Ada.svg" width="30" height="30">
+                <img src="/assets/img/svg/ada.svg" width="30" height="30">
                 <div class="ml-2">
                     <span>Cardano</span>
                     <br>
