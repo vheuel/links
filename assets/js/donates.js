@@ -487,7 +487,7 @@ https://www.buymeacoffee.com/vheuel
 
 
 </div>
-<div style="margin-top:9px"><a href="javascript:history.back()">Back to previous page</a></div>
+
 
 
 
