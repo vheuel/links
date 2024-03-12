@@ -13,6 +13,6 @@ function partner() {
       <img src="/assets/img/indodax.gif" width="100%" alt=""/>
     </a>
 <br><br><br>
-<a href="javascript:history.back()">Kembali ke Halaman Sebelumnya</a>
+
   `;
 }
